@@ -56,7 +56,7 @@ We would suggest you make sure your document looks clean, aesthetically pleasing
 
 ## Objective
 
-This assignment is in partnership with STEMBuddies ([https://stembuddies.ca/](https://stembuddies.ca/)). STEMBuddies is a nonprofit organization that provides free, accessible resources to help underserved students navigate high school and pursue post-secondary education. Their work focuses on developing mentorship supports, workshops, and post-secondary-focused programming. They have helped over 700 students, from many underrepresented communities, build confidence and develop their skills to create clearer path forward in STEM.
+This assignment is in partnership with STEMBuddies (<https://stembuddies.ca/>). STEMBuddies is a nonprofit organization that provides free, accessible resources to help underserved students navigate high school and pursue post-secondary education. Their work focuses on developing mentorship supports, workshops, and post-secondary-focused programming. They have helped over 700 students, from many underrepresented communities, build confidence and develop their skills to create clearer path forward in STEM.
 
 The objective of this assignment is to help STEMBuddies design a survey to assess the needs, preferences, and feedback of high school students regarding the development of the STEMBuddies handbook. They are looking for a way to gauge what is missing from the handbook (i.e., what are the needs of their population) as well as ways to improve the handbook (i.e., feedback from the population about the current draft). The purpose of the handbook is to support students through their academic and personal journeys.
 
