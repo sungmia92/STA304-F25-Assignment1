@@ -1,6 +1,6 @@
 ---
 title: "ADD IN MEANINGFUL TITLE HERE"
-author: "A2 GROUP NUMBER: ADD YOUR NAMES HERE"
+author: "A1-GROUP 40: ISLA CHEONG, VANESSA GABRIELA KWOK, MIA SUNG, CAROL XU"
 subtitle: "STA304 - Fall 2025 - Assignment 1"
 format: pdf
 editor: visual
@@ -126,7 +126,7 @@ Remind the reader of what your variable is. Here you could present your results.
 In Table 1 I present both confidence intervals of... Compare the confidence intervals of the same outcome of the two surveys. Be sure to highlight any key takeaways of the results and how this relays to the populations at hand and how it relates back to the motivations you laid out in your Introduction section.
 
 |   | Proportion of Outcome Variable | 95% Confidence Interval of Outcome Variable |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | My Survey Q | 0.34 | (lower bound, upper bound) |
 | Another Survey Q | 0.25 | (lower bound, upper bound) |
 
