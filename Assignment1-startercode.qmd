@@ -20,6 +20,10 @@ library(tidyverse)
 
 In this section you will briefly describe your report. Explain the importance of the survey you are going to present, as well as the subsequent analysis and prepare the reader for what they will read in the subsequent sections. Explain the goal/topic of the survey/study and the variables you selected of interest here. It might be helpful to explain what STEMBuddies is and provide some information/literature review about education resource developement. You will likely need to include in-line citations/references (you can APA style/formatting if desired \[1\]).
 
+Mentorship is a resource that aids students in finishing high school and getting ready for higher education, especially in science, technology, engineering, and mathematics (STEM) areas. STEMBuddies is a group that connects high school students with mentors, organizes workshops, offers programs centered on post-secondary education, and supplies free resources to decrease obstacles for underrepresented communities. To develop an optimized handbook that supports students both academically and personally, it is essential to collect feedback from the high school students so that their needs and preferences can be assessed.
+
+This report outlines the design and analysis of a survey created to assess the needs of high school students and their preferences. By using best practices in survey design \[1\], the survey provides actionable insights for STEMBuddies to improve mentorship accessibility, inclusivity, and their overall impact.
+
 # 2 Survey Showcasing
 
 ## 2.1 Survey Description
@@ -32,6 +36,8 @@ Provide a link to your survey. Here is an example of how to put a url into your 
 (iv) Conclusion/closing message.
 
 Briefly describe your survey theme/focus. Comment on questions that were included and justify any categorizations.
+
+Survey link: <https://docs.google.com/forms/d/e/1FAIpQLSdYZMej-0D-irmDJD0RqHR06-R43lzvgS9Jn0mq6_WxutFUEw/viewform?usp=header>
 
 ## 2.2 Testing My Survey
 
@@ -140,7 +146,7 @@ Alternatively, if you did not use Generative AI, please include a brief statemen
 
 # 8 Bibliography
 
-1.  Schwartz, B. M., Landrum, R. E., & Gurung, R. A. (2020). *An easyguide to APA style*. Sage Publications.
+1.  Creating Effective Surveys: Best Practices in Survey Design. Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
 
 2.  Dekking, F. M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
 
