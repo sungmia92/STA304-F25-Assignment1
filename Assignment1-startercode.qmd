@@ -31,8 +31,11 @@ This report outlines the design and analysis of a survey created to assess the n
 <!-- Provide a link to your survey. Here is an example of how to put a url into your document: <https://www.surveymonkey.co.uk/r/99CGC3B>. Remember the survey needs to include: -->
 
 <!-- (i) Introduction section -->
+
 <!-- (ii) at least 2 demographic survey questions -->
+
 <!-- (iii) At least 2 needs assessments survey questions -->
+
 <!-- (iv) Conclusion/closing message. -->
 
 <!-- Briefly describe your survey theme/focus. Comment on questions that were included and justify any categorizations. -->
@@ -114,8 +117,7 @@ sim_data <- tibble(
 
 <!-- Briefly introduce the data and key variables of interest. If you do any general data cleaning or data processing you should describe it (in a reproducible manner) here. It might be helpful to clearly define the variables of interest (i.e., the ones you will present in the subsequent sections) here, along with any data cleaning you did to these variables. -->
 
-We cleaned binary-coded responses (0 = not selected, 1 = selected).
-Below is a bar plot of frequencies:
+We cleaned binary-coded responses (0 = not selected, 1 = selected). Below is a bar plot of frequencies:
 
 ```{r, include = FALSE}
 
@@ -158,17 +160,19 @@ sim_data_clean %>%
 
 # 5 Methods
 
-Include some text introducing the methodology. Here you should describe the confidence interval and all of the components.
+<!-- Include some text introducing the methodology. Here you should describe the confidence interval and all of the components. -->
 
-$$ include.your.mathematical.model.here.if.you.have.some.math.to.show $$
+<!-- $$ include.your.mathematical.model.here.if.you.have.some.math.to.show $$ -->
 
-Here is an example of a non-sensical CI that the prof made up, but has math coding components that you can change accordingly:
+<!-- Here is an example of a non-sensical CI that the prof made up, but has math coding components that you can change accordingly: -->
 
-$$\bar{X} \pm \chi_{\alpha/2} \sqrt{\frac{1+1}{n}}$$
+<!-- $$\bar{X} \pm \chi_{\alpha/2} \sqrt{\frac{1+1}{n}}$$ -->
 
-\<Here you should describe the CI. Here is an example with a citation:\>
+<!-- \<Here you should describe the CI. Here is an example with a citation:\> -->
 
-I will invoke a non-parametric bootstrap \[2\] to derive the 95% confidence interval (CI) for the mean age of students in STA304.
+<!-- I will invoke a non-parametric bootstrap \[2\] to derive the 95% confidence interval (CI) for the mean age of students in STA304. -->
+
+To estimate the proportion of students who prefer a specific resource, we will use the following formula for a 95% confidence interval for a population proportion: $$CI = \hat{p} \pm z^*  \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$where $\hat{p}$ is the sample proportion, $z^∗$ is the z-score corresponding to the desired confidence level (1.96 for 95% confidence), and n is the sample size \[2\].
 
 # 6 Results
 
@@ -197,7 +201,7 @@ Alternatively, if you did not use Generative AI, please include a brief statemen
 
 # 8 Bibliography
 
-1.  Creating Effective Surveys: Best Practices in Survey Design. Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
+1.  *Creating Effective Surveys: Best Practices in Survey Design.* Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
 
 2.  Dekking, F. M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
 
