@@ -112,31 +112,47 @@ sim_data <- tibble(
 
 # 4 Data
 
-Briefly introduce the data and key variables of interest. If you do any general data cleaning or data processing you should describe it (in a reproducible manner) here. It might be helpful to clearly define the variables of interest (i.e., the ones you will present in the subsequent sections) here, along with any data cleaning you did to these variables.
+<!-- Briefly introduce the data and key variables of interest. If you do any general data cleaning or data processing you should describe it (in a reproducible manner) here. It might be helpful to clearly define the variables of interest (i.e., the ones you will present in the subsequent sections) here, along with any data cleaning you did to these variables. -->
+
+We cleaned binary-coded responses (0 = not selected, 1 = selected).
+Below is a bar plot of frequencies:
 
 ```{r, include = FALSE}
 
-# Here you can clean your data (if needed). 
+# # Here you can clean your data (if needed). 
+# 
+# # Below is an example of me changing the "yeah"s to "Yes"s
+# 
+# sim_data_clean <- sim_data %>% 
+#   mutate(friendly_clean  = case_when(friendly=="yeah" ~ "Yes",
+#                                      friendly=="No"~"No")) %>% 
+#   select(-friendly)
 
-# Below is an example of me changing the "yeah"s to "Yes"s
-
-sim_data_clean <- sim_data %>% 
-  mutate(friendly_clean  = case_when(friendly=="yeah" ~ "Yes",
-                                     friendly=="No"~"No")) %>% 
-  select(-friendly)
+sim_data_clean <- sim_data %>%
+  pivot_longer(cols = starts_with("resource"), names_to = "resource_num", values_to = "resource") %>%
+  select(-resource_num)
 
 ```
 
 ```{r, echo = FALSE}
 
-# Use this to create some plots. 
+# # Use this to create some plots. 
+# 
+# sim_data_clean %>% ggplot(aes(x=friendly_clean))+
+#   geom_bar(fill="orange", col="brown") +
+#   theme_minimal() + 
+#   labs(x = "Friendly",
+#        y = "Frequency",
+#        title = "Figure 1: A bar plot displaying whether the student thinks that \n they are a friendly person or not for all students \n in highschools measured in Ontario.") 
 
-sim_data_clean %>% ggplot(aes(x=friendly_clean))+
-  geom_bar(fill="orange", col="brown") +
-  theme_minimal() + 
-  labs(x = "Friendly",
+sim_data_clean %>%
+  ggplot(aes(x = resource)) +
+  geom_bar(fill = "blue", col = "black") +
+  theme_minimal() +
+  labs(x = "Resource",
        y = "Frequency",
-       title = "Figure 1: A bar plot displaying whether the student thinks that \n they are a friendly person or not for all students \n in highschools measured in Ontario.") 
+       title = "Figure 1: Frequency of Resource Preferences Among High School Students") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
 
