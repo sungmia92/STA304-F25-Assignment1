@@ -210,21 +210,21 @@ cat("95% Confidence Interval: (", round(ci_lower, 2), ",", round(ci_upper, 2), "
 
 <!-- : The proportions and 95% confidence intervals of outcome variable of interest calculated for both my survey question and another survey question. -->
 
-In Table 1, we present the proportion of students who prefer "Academic Tutoring" as a resource, along with the corresponding 95% confidence interval.
-
 | Resource          | Proportion of Students | 95% Confidence Interval |
 |-------------------|------------------------|-------------------------|
 | Academic Tutoring | 0.30                   | (0.21, 0.39)            |
 
-: Table 1: The proportion and 95% confidence interval for students preferring "Academic Tutoring".
+: Table 1: The proportion and 95% confidence interval of students preferring "Academic Tutoring".
 
 Interpretation: For example, 30% of students selected academic tutoring as a valuable resource, with a 95% CI of approximately (21%, 39%).
 
 # 7 Generative AI Statement
 
-Here is where you can explain your usage of Generative AI tool(s). Be sure to reference it.
+<!-- Here is where you can explain your usage of Generative AI tool(s). Be sure to reference it. -->
 
-Alternatively, if you did not use Generative AI, please include a brief statement outlining your workflow for completing this assignment.
+<!-- Alternatively, if you did not use Generative AI, please include a brief statement outlining your workflow for completing this assignment. -->
+
+Generative AI (ChatGPT) was used to help structure this report, generate simulation code, and ensure clarity of statistical explanations. All simulated data generation, results, and interpretation were conducted independently by the authors.
 
 # 8 Bibliography
 
