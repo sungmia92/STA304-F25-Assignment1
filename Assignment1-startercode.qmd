@@ -180,18 +180,45 @@ To estimate the proportion of students who prefer a specific resource, we will u
 
 # Here you can derive the CIs of interest based off the simulated data in a previous chunk.
 
+# Below is some example code that calculates the CI for the proportion of students that think they are friendly. You will need to change this to be relevant to your survey question/variable of interest.
+
+n <- nrow(sim_data_clean)
+p_hat <- sim_data_clean %>% filter(resource == "Academic Tutoring") %>% nrow() / n
+z_star <- 1.96
+margin_of_error <- z_star * sqrt((p_hat * (1 - p_hat)) / n)
+ci_lower <- p_hat - margin_of_error
+ci_upper <- p_hat + margin_of_error
+
+# Here is an example of printing out the results. You will need to change this to be relevant to your survey question/variable of interest.
+
+cat("Proportion of students preferring Academic Tutoring:", round(p_hat, 2), "\n")
+cat("95% Confidence Interval: (", round(ci_lower, 2), ",", round(ci_upper, 2), ")\n")
+
 ```
 
-Remind the reader of what your variable is. Here you could present your results. You may want to put them into a well formatted table. Be sure that there is some text describing the results.
+<!-- Remind the reader of what your variable is. Here you could present your results. You may want to put them into a well formatted table. Be sure that there is some text describing the results. -->
 
-In Table 1 I present both confidence intervals of... Compare the confidence intervals of the same outcome of the two surveys. Be sure to highlight any key takeaways of the results and how this relays to the populations at hand and how it relates back to the motivations you laid out in your Introduction section.
+<!-- In Table 1 I present both confidence intervals of... Compare the confidence intervals of the same outcome of the two surveys. Be sure to highlight any key takeaways of the results and how this relays to the populations at hand and how it relates back to the motivations you laid out in your Introduction section. -->
 
-|   | Proportion of Outcome Variable | 95% Confidence Interval of Outcome Variable |
-|------------------------|------------------------|------------------------|
-| My Survey Q | 0.34 | (lower bound, upper bound) |
-| Another Survey Q | 0.25 | (lower bound, upper bound) |
+<!-- |   | Proportion of Outcome Variable | 95% Confidence Interval of Outcome Variable | -->
 
-: The proportions and 95% confidence intervals of outcome variable of interest calculated for both my survey question and another survey question.
+<!-- |------------------------|------------------------|------------------------| -->
+
+<!-- | My Survey Q | 0.34 | (lower bound, upper bound) | -->
+
+<!-- | Another Survey Q | 0.25 | (lower bound, upper bound) | -->
+
+<!-- : The proportions and 95% confidence intervals of outcome variable of interest calculated for both my survey question and another survey question. -->
+
+In Table 1, we present the proportion of students who prefer "Academic Tutoring" as a resource, along with the corresponding 95% confidence interval.
+
+| Resource          | Proportion of Students | 95% Confidence Interval |
+|-------------------|------------------------|-------------------------|
+| Academic Tutoring | 0.30                   | (0.21, 0.39)            |
+
+: Table 1: The proportion and 95% confidence interval for students preferring "Academic Tutoring".
+
+Interpretation: For example, 30% of students selected academic tutoring as a valuable resource, with a 95% CI of approximately (21%, 39%).
 
 # 7 Generative AI Statement
 
