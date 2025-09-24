@@ -18,7 +18,7 @@ library(tidyverse)
 
 # 1 Introduction
 
-In this section you will briefly describe your report. Explain the importance of the survey you are going to present, as well as the subsequent analysis and prepare the reader for what they will read in the subsequent sections. Explain the goal/topic of the survey/study and the variables you selected of interest here. It might be helpful to explain what STEMBuddies is and provide some information/literature review about education resource developement. You will likely need to include in-line citations/references (you can APA style/formatting if desired \[1\]).
+<!-- In this section you will briefly describe your report. Explain the importance of the survey you are going to present, as well as the subsequent analysis and prepare the reader for what they will read in the subsequent sections. Explain the goal/topic of the survey/study and the variables you selected of interest here. It might be helpful to explain what STEMBuddies is and provide some information/literature review about education resource developement. You will likely need to include in-line citations/references (you can APA style/formatting if desired \[1\]). -->
 
 Mentorship is a resource that aids students in finishing high school and getting ready for higher education, especially in science, technology, engineering, and mathematics (STEM) areas. STEMBuddies is a group that connects high school students with mentors, organizes workshops, offers programs centered on post-secondary education, and supplies free resources to decrease obstacles for underrepresented communities. To develop an optimized handbook that supports students both academically and personally, it is essential to collect feedback from the high school students so that their needs and preferences can be assessed.
 
@@ -28,36 +28,60 @@ This report outlines the design and analysis of a survey created to assess the n
 
 ## 2.1 Survey Description
 
-Provide a link to your survey. Here is an example of how to put a url into your document: <https://www.surveymonkey.co.uk/r/99CGC3B>. Remember the survey needs to include:
+<!-- Provide a link to your survey. Here is an example of how to put a url into your document: <https://www.surveymonkey.co.uk/r/99CGC3B>. Remember the survey needs to include: -->
 
-(i) Introduction section
-(ii) at least 2 demographic survey questions
-(iii) At least 2 needs assessments survey questions
-(iv) Conclusion/closing message.
+<!-- (i) Introduction section -->
+<!-- (ii) at least 2 demographic survey questions -->
+<!-- (iii) At least 2 needs assessments survey questions -->
+<!-- (iv) Conclusion/closing message. -->
 
-Briefly describe your survey theme/focus. Comment on questions that were included and justify any categorizations.
+<!-- Briefly describe your survey theme/focus. Comment on questions that were included and justify any categorizations. -->
 
-Survey link: <https://docs.google.com/forms/d/e/1FAIpQLSdYZMej-0D-irmDJD0RqHR06-R43lzvgS9Jn0mq6_WxutFUEw/viewform?usp=header>
+Our survey, hosted on <https://docs.google.com/forms/d/e/1FAIpQLSdYZMej-0D-irmDJD0RqHR06-R43lzvgS9Jn0mq6_WxutFUEw/viewform?usp=header>, is designed to gather insights from high school students regarding their academic and personal needs, as well as their preferences for mentorship programs. The survey consists of the following sections:
+
+1.  **Introduction**: A brief description of STEMBuddies and purpose of the survey.
+2.  **Core Questions**: Demographic questions, needs-assessment questions, and program feedback prompts.
+3.  **Closing Message**: Thanks participants and provides contact information.
 
 ## 2.2 Testing My Survey
 
-Briefly describe how you tested your survey.
+<!-- Briefly describe how you tested your survey. -->
+
+Each question was designed to minimize ambiguity and cognitive load. For example, we avoided double-barreled items and ensured that the survey was focused and concise \[1\]. We piloted the survey with three peers and incorporated feedback to refine clarity and ease of responsiveness.
 
 ## 2.3 Showcasing Relevant Question(s)
 
-Choose at least 1 question in your survey to showcase in this submission (as well as any other questions that are relevant to analyses in subsequent sections). You can format this however you'd like, but we prefer it to be organized and be easily readable given the question type. It might be a good idea to italicize the question(s) you are showcasing. Copy and paste the question(s) (and make sure they are formatted nicely) into this section of the document. Explain why you chose this question(s) and the benefits and drawbacks of the design/wording of the question. For each drawback you list, justify why you couldn’t avoid/address it in the design of your survey.
+<!-- Choose at least 1 question in your survey to showcase in this submission (as well as any other questions that are relevant to analyses in subsequent sections). You can format this however you'd like, but we prefer it to be organized and be easily readable given the question type. It might be a good idea to italicize the question(s) you are showcasing. Copy and paste the question(s) (and make sure they are formatted nicely) into this section of the document. Explain why you chose this question(s) and the benefits and drawbacks of the design/wording of the question. For each drawback you list, justify why you couldn’t avoid/address it in the design of your survey. -->
+
+A key survey question is showcased below:
+
+*Which of the following resources would be most valuable to you as part of the STEMBuddies program? (Select up to three options)*
+
+-   Academic Tutoring
+-   College Application Guidance
+-   Career Counseling
+-   Mental Health Support
+-   Time Management Skills
+-   Financial Literacy
+-   Other (please specify): \_\_\_\_\_\_\_\_\_\_\_
+
+Benefits: Multiple-choice with “Other” allows structured yet flexible responses. Drawbacks: May still miss nuanced needs not anticipated in listed options.
 
 # 3 Procedure
 
 ## 3.1 Proposed Sampling Procedure
 
-Briefly introduce the proposal and how you would recommend STEMBuddies implement the sampling process of collecting survey feedback (ie. provide a procedural outline of how you propose STEMBuddies should collect the data from the population - try to be realistic).
+<!-- Briefly introduce the proposal and how you would recommend STEMBuddies implement the sampling process of collecting survey feedback (ie. provide a procedural outline of how you propose STEMBuddies should collect the data from the population - try to be realistic). -->
 
-Here you should identify a target population, a reasonable sampling frame (if you are suggesting using one), and the (proposed) sample units. Try to be reasonable. Identify the strengths of your proposed sampling procedure and highlight any potential errors/biases.
+<!-- Here you should identify a target population, a reasonable sampling frame (if you are suggesting using one), and the (proposed) sample units. Try to be reasonable. Identify the strengths of your proposed sampling procedure and highlight any potential errors/biases. -->
+
+To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada. The survey will be distributed to students via partnerships with high schools, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The sampling frame is limited but feasible. The unit is individual students. Errors may arise from non-response bias and limited internet access.
 
 ## 3.2 Simulation
 
-Type here a paragraph introducing the data that you will simulate (i.e., for the question/variables introduced in Section 3 - Survey Showcasing), its context and the data simulation process. Be sure that your description is reproducible and that the simulated values match the inputs expected from your survey.
+<!-- Type here a paragraph introducing the data that you will simulate (i.e., for the question/variables introduced in Section 3 - Survey Showcasing), its context and the data simulation process. Be sure that your description is reproducible and that the simulated values match the inputs expected from your survey. -->
+
+We simulate survey responses for 100 students to mirror the showcased resource-preference question.
 
 ```{r, include = FALSE}
 
@@ -67,11 +91,22 @@ Type here a paragraph introducing the data that you will simulate (i.e., for the
 
 # I have included some example code below, but it should be changed, as it is likely not relevant and doesn't really appropriately simulate heights.
 
-set.seed(1234)
-height <- runif(n=5, min=0, max=4)
-friendly <- sample(x=c("yeah", "No"), size=5, replace=T)
+# set.seed(1234)
+# height <- runif(n=5, min=0, max=4)
+# friendly <- sample(x=c("yeah", "No"), size=5, replace=T)
+# 
+# sim_data <- tibble(height, friendly)
 
-sim_data <- tibble(height, friendly)
+set.seed(1234)
+n <- 100
+resources <- c("Academic Tutoring", "College Application Guidance", "Career Counseling",
+               "Mental Health Support", "Time Management Skills", "Financial Literacy", "Other")
+sim_data <- tibble(
+  id = 1:n,
+  resource1 = sample(resources, n, replace = TRUE),
+  resource2 = sample(resources, n, replace = TRUE),
+  resource3 = sample(resources, n, replace = TRUE)
+)
 
 ```
 
