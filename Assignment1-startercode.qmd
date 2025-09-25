@@ -40,7 +40,7 @@ This report outlines the design and analysis of a survey created to assess the n
 
 <!-- Briefly describe your survey theme/focus. Comment on questions that were included and justify any categorizations. -->
 
-Our survey, hosted on <https://docs.google.com/forms/d/e/1FAIpQLSdYZMej-0D-irmDJD0RqHR06-R43lzvgS9Jn0mq6_WxutFUEw/viewform?usp=header>, is designed to gather insights from high school students regarding their academic and personal needs, as well as their preferences for mentorship programs. The survey consists of the following sections:
+Our survey, hosted on <https://forms.gle/sWqTQ1HCXPrjkk6BA>, is designed to gather insights from high school students regarding their academic and personal needs, as well as their preferences for mentorship programs. The survey consists of the following sections:
 
 1.  **Introduction**: A brief description of STEMBuddies and purpose of the survey.
 2.  **Core Questions**: Demographic questions, needs-assessment questions, and program feedback prompts.
@@ -58,7 +58,7 @@ Each question was designed to minimize ambiguity and cognitive load. For example
 
 A key survey question is showcased below:
 
-*Which of the following resources would be most valuable to you as part of the STEMBuddies program? (Select up to three options)*
+*Which of the following resources would be most valuable to you in the STEMBuddies program? (Select up to three options)*
 
 -   Academic Tutoring
 -   College Application Guidance
@@ -66,7 +66,7 @@ A key survey question is showcased below:
 -   Mental Health Support
 -   Time Management Skills
 -   Financial Literacy
--   Other (please specify): \_\_\_\_\_\_\_\_\_\_\_
+-   Other: \_\_\_\_\_\_\_\_\_\_\_
 
 Benefits: Multiple-choice with “Other” allows structured yet flexible responses. Drawbacks: May still miss nuanced needs not anticipated in listed options.
 
