@@ -127,11 +127,11 @@ sim_data <- tibble(id = 1:n) %>%
 
 # 4 Data
 
-## Data Cleaning
+## 4.1  Data Cleaning and Processing
 
 <!-- Briefly introduce the data and key variables of interest. If you do any general data cleaning or data processing you should describe it (in a reproducible manner) here. It might be helpful to clearly define the variables of interest (i.e., the ones you will present in the subsequent sections) here, along with any data cleaning you did to these variables. -->
 
-The dataset consists of simulated survey responses from 100 high school students, where each student was asked to identify three preferred resources from a list (e.g., academic tutoring, mental health support, financial literacy). To prepare the data for analysis, we reshaped the responses into a long format so that all selected resources appeared in a single column. We then recoded these selections into a binary structure (0 = not selected, 1 = selected) for each unique resource. The key variables of interest are the binary indicators for resource preference, which capture whether or not each student selected a given resource. This cleaned dataset provides a consistent and reproducible format for analyzing overall trends in resource demand.
+The dataset consists of simulated survey responses from 100 high school students, where each student was asked to identify three preferred resources from a list (e.g., academic tutoring, mental health support, financial literacy). To prepare the data for analysis, we reshaped the responses into a long format so that all selected resources appeared in a single column. We then recoded these selections into a binary structure for each unique resource. The key variables of interest are the binary indicators for resource preference, which capture whether or not each student selected a given resource. This cleaned dataset provides a consistent and reproducible format for analyzing overall trends in resource demand.
 
 ```{r, include = FALSE}
 
@@ -160,11 +160,13 @@ sim_data_binary <- sim_data_clean %>%
   )
 ```
 
-## Variables of Interest
+## 4.2 Variables of Interest
 
 <!-- Description of the variable(s) in the main analysis. Note: this should align with the question(s) highlighted in Section 2.-->
 
-## Figures
+The main analysis focuses on the survey question: “Which of the following resources would be most valuable to you in the STEMBuddies program? (Select up to three options).” Each resource is represented as a binary-coded variable (0 = not selected, 1 = selected). The key variables analyzed are: Academic Tutoring, College Application Guidance, Career Counseling, Mental Health Support, Time Management Skills, Financial Literacy, and Other. These variables form the core of the main analysis, allowing us to calculate the frequency and proportion of students selecting each resource, visualize student preferences, and compute confidence intervals to quantify the uncertainty around these proportions.
+
+## 4.3 Figures
 
 <!-- At least 1 aesthetically pleasing plot/graph/figure of the variable(s) of interest and this should be labelled and numbered.-->
 
@@ -172,7 +174,7 @@ sim_data_binary <- sim_data_clean %>%
 
 Below is a bar plot of frequencies:
 
-```{r, echo = FALSE}
+```{r, fig.width=7, fig.height=5, echo = FALSE}
 
 # # Use this to create some plots. 
 # 
@@ -193,6 +195,12 @@ sim_data_clean %>%
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
+
+Figure 1 shows the number of students who selected each resource from the survey. The x-axis lists all possible resources, while the y-axis represents the number of students selecting each option. This figure clearly highlights which resources are most frequently requested, providing STEMBuddies with a visual summary of student preferences. For example, taller bars indicate higher demand for a particular resource, helping to prioritize support areas in the handbook.
+
+## 4.4 Data Summary for Confidence Interval Analysis
+<!-- Some text (and perhaps graphical summaries) of the variables you will calculate the confidence interval from. This should help prep the reader in understanding why the interval is important and whether it is appropriate.-->
+
 
 # 5 Methods
 
