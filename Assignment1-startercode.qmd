@@ -84,7 +84,7 @@ To collect survey feedback, we propose a stratified random sampling procedure ta
 
 <!-- Type here a paragraph introducing the data that you will simulate (i.e., for the question/variables introduced in Section 3 - Survey Showcasing), its context and the data simulation process. Be sure that your description is reproducible and that the simulated values match the inputs expected from your survey. -->
 
-We simulate survey responses for 100 students to mirror the showcased resource-preference question.
+We simulate survey responses for 100 students to mirror the showcased resource-preference question. Each simulated respondent selects up to three resources from the options provided in the survey. This process ensures that the simulated dataset reflects the structure and response style of the actual survey, while still being reproducible through the use of a fixed random seed. By generating these responses, we create a realistic dataset that can be analyzed to demonstrate the kinds of insights STEMBuddies could obtain if the survey were administered in practice.
 
 ```{r, include = FALSE}
 
@@ -104,20 +104,34 @@ set.seed(1234)
 n <- 100
 resources <- c("Academic Tutoring", "College Application Guidance", "Career Counseling",
                "Mental Health Support", "Time Management Skills", "Financial Literacy", "Other")
-sim_data <- tibble(
-  id = 1:n,
-  resource1 = sample(resources, n, replace = TRUE),
-  resource2 = sample(resources, n, replace = TRUE),
-  resource3 = sample(resources, n, replace = TRUE)
-)
+
+# sim_data <- tibble(
+#  id = 1:n,
+#  resource1 = sample(resources, n, replace = FALSE),
+#  resource2 = sample(resources, n - 1, replace = FALSE),
+#  resource3 = sample(resources, n, replace = FALSE)
+#)
+
+# Ensure unique selections for each student
+sim_data <- tibble(id = 1:n) %>%
+  rowwise() %>%  # Process each row individually
+  mutate(
+    resource1 = sample(resources, 1),  # First resource
+    remaining_resources = list(resources[resources != resource1]),  # Remove the first choice
+    resource2 = sample(remaining_resources, 1),  # Second resource (unique)
+    resource3 = sample(remaining_resources[remaining_resources != resource2], 1)  # Third resource (unique)
+  ) %>%
+  select(id, resource1, resource2, resource3)  # Keep only the needed columns
 
 ```
 
 # 4 Data
 
+## Data Cleaning
+
 <!-- Briefly introduce the data and key variables of interest. If you do any general data cleaning or data processing you should describe it (in a reproducible manner) here. It might be helpful to clearly define the variables of interest (i.e., the ones you will present in the subsequent sections) here, along with any data cleaning you did to these variables. -->
 
-We cleaned binary-coded responses (0 = not selected, 1 = selected). Below is a bar plot of frequencies:
+The dataset consists of simulated survey responses from 100 high school students, where each student was asked to identify three preferred resources from a list (e.g., academic tutoring, mental health support, financial literacy). To prepare the data for analysis, we reshaped the responses into a long format so that all selected resources appeared in a single column. We then recoded these selections into a binary structure (0 = not selected, 1 = selected) for each unique resource. The key variables of interest are the binary indicators for resource preference, which capture whether or not each student selected a given resource. This cleaned dataset provides a consistent and reproducible format for analyzing overall trends in resource demand.
 
 ```{r, include = FALSE}
 
@@ -130,11 +144,33 @@ We cleaned binary-coded responses (0 = not selected, 1 = selected). Below is a b
 #                                      friendly=="No"~"No")) %>% 
 #   select(-friendly)
 
+# Reshape to long format
 sim_data_clean <- sim_data %>%
   pivot_longer(cols = starts_with("resource"), names_to = "resource_num", values_to = "resource") %>%
   select(-resource_num)
 
+# Create binary-coded dataset
+sim_data_binary <- sim_data_clean %>%
+  mutate(value = 1) %>%
+  complete(id, resource, fill = list(value = 0)) %>%  # Fill missing with 0
+  pivot_wider(
+    id_cols = id,
+    names_from = resource,
+    values_from = value 
+  )
 ```
+
+## Variables of Interest
+
+<!-- Description of the variable(s) in the main analysis. Note: this should align with the question(s) highlighted in Section 2.-->
+
+## Figures
+
+<!-- At least 1 aesthetically pleasing plot/graph/figure of the variable(s) of interest and this should be labelled and numbered.-->
+
+<!-- Text explaining all tables and figures in this section.-->
+
+Below is a bar plot of frequencies:
 
 ```{r, echo = FALSE}
 
