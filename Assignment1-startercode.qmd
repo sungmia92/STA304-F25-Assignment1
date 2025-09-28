@@ -68,6 +68,8 @@ A key survey question is showcased below:
 -   Financial Literacy
 -   Other: \_\_\_\_\_\_\_\_\_\_\_
 
+We choose this question because it provides insight into what our target population may be seeking in the handbook and helps us better understand their needs.
+
 Benefits: Multiple-choice with “Other” allows structured yet flexible responses. Drawbacks: May still miss nuanced needs not anticipated in listed options.
 
 # 3 Procedure
