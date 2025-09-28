@@ -127,7 +127,7 @@ sim_data <- tibble(id = 1:n) %>%
 
 # 4 Data
 
-## 4.1  Data Cleaning and Processing
+## 4.1 Data Cleaning and Processing
 
 <!-- Briefly introduce the data and key variables of interest. If you do any general data cleaning or data processing you should describe it (in a reproducible manner) here. It might be helpful to clearly define the variables of interest (i.e., the ones you will present in the subsequent sections) here, along with any data cleaning you did to these variables. -->
 
@@ -199,8 +199,8 @@ sim_data_clean %>%
 Figure 1 shows the number of students who selected each resource from the survey. The x-axis lists all possible resources, while the y-axis represents the number of students selecting each option. This figure clearly highlights which resources are most frequently requested, providing STEMBuddies with a visual summary of student preferences. For example, taller bars indicate higher demand for a particular resource, helping to prioritize support areas in the handbook.
 
 ## 4.4 Data Summary for Confidence Interval Analysis
-<!-- Some text (and perhaps graphical summaries) of the variables you will calculate the confidence interval from. This should help prep the reader in understanding why the interval is important and whether it is appropriate.-->
 
+<!-- Some text (and perhaps graphical summaries) of the variables you will calculate the confidence interval from. This should help prep the reader in understanding why the interval is important and whether it is appropriate.-->
 
 # 5 Methods
 
