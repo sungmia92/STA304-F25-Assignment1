@@ -4,6 +4,7 @@ author: "\\small A1-GROUP 40: ISLA CHEONG, VANESSA GABRIELA KWOK, MIA SUNG, CARO
 subtitle: "STA304 - Fall 2025 - Assignment 1"
 format: pdf
 fontsize: 12pt
+geometry: margin=2.5cm
 editor: visual
 ---
 
