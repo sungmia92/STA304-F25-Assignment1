@@ -211,7 +211,7 @@ cat("95% Confidence Interval: (", round(ci_lower, 2), ",", round(ci_upper, 2), "
 
 | Resource          | Proportion of Students | 95% Confidence Interval |
 |-------------------|------------------------|-------------------------|
-| Academic Tutoring | 0.30                   | (0.21, 0.39)            |
+| Academic Tutoring | 0.12                   | (0.08, 0.16)            |
 
 : Table 1: The proportion and 95% confidence interval of students preferring "Academic Tutoring".
 
