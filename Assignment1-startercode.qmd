@@ -1,8 +1,9 @@
 ---
 title: "ADD IN MEANINGFUL TITLE HERE"
-author: "A1-GROUP 40: ISLA CHEONG, VANESSA GABRIELA KWOK, MIA SUNG, CAROL XU"
+author: "\\small A1-GROUP 40: ISLA CHEONG, VANESSA GABRIELA KWOK, MIA SUNG, CAROL XU"
 subtitle: "STA304 - Fall 2025 - Assignment 1"
 format: pdf
+fontsize: 12pt
 editor: visual
 ---
 
