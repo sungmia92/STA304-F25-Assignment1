@@ -1,5 +1,5 @@
 ---
-title: "ADD IN MEANINGFUL TITLE HERE"
+title: "STEMBuddies Handbook Survey"
 author: "\\small A1-GROUP 40: ISLA CHEONG, VANESSA GABRIELA KWOK, MIA SUNG, CAROL XU"
 subtitle: "STA304 - Fall 2025 - Assignment 1"
 format: pdf
