@@ -169,9 +169,10 @@ sim_data_clean %>%
 
 ```
 
-Figure 1 shows the number of students who selected each resource from the survey. The x-axis lists all possible resources, while the y-axis represents the number of students selecting each option. This figure clearly highlights which resources are most frequently requested, providing STEMBuddies with a visual summary of student preferences. For example, taller bars indicate higher demand for a particular resource, helping to prioritize support areas in the handbook.
+Figure 1 shows the number of students who selected each resource from the survey. The x-axis lists all possible resources, while the y-axis represents the number of students selecting each option. Among the listed resources, Financial Literacy had the highest frequency of selection, while Time Management Skills had the lowest. This figure clearly highlights which resources are most frequently requested, providing STEMBuddies with a visual summary of student preferences. For example, taller bars indicate higher demand for a particular resource, helping to prioritize support areas in the handbook.
 
 ## 4.4 Data Summary for Confidence Interval Analysis
+
 The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides a useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
 
 # 5 Methods
@@ -202,11 +203,11 @@ cat("95% Confidence Interval: (", round(ci_lower, 2), ",", round(ci_upper, 2), "
 
 | Resource          | Proportion of Students | 95% Confidence Interval |
 |-------------------|------------------------|-------------------------|
-| Academic Tutoring | 0.30                   | (0.21, 0.39)            |
+| Academic Tutoring | 0.12                   | (0.08, 0.16)            |
 
-: Table 1: The proportion and 95% confidence interval of students preferring "Academic Tutoring".
+: The proportion and 95% confidence interval of students preferring "Academic Tutoring".
 
-Interpretation: For example, 30% of students selected academic tutoring as a valuable resource, with a 95% CI of approximately (21%, 39%).
+Interpretation: For example, 12% of students selected "Academic Tutoring" as a valuable resource, and the confidence interval suggests that the true proportion is likely between 8% and 16%.
 
 # 7 Generative AI Statement
 
