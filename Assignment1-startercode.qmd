@@ -58,7 +58,7 @@ Benefits: Multiple-choice with “Other” allows structured yet flexible respon
 
 ## 3.1 Proposed Sampling Procedure
 
-To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada. The survey will be distributed to students via partnerships with high schools, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The sampling frame is limited but feasible. The unit is individual students. Errors may arise from non-response bias and limited internet access.
+To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.The sampling frame is limited but feasible. Errors may arise from coverage bias, non-response bias and limited internet access.
 
 ## 3.2 Simulation
 
