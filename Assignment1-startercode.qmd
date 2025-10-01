@@ -219,9 +219,11 @@ Generative AI (ChatGPT) was used to help structure this report, generate simulat
 
 1.  *Creating Effective Surveys: Best Practices in Survey Design.* Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
 
-2.  Dekking, F. M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
+2.  Dekking, F.M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
 
 3.  Allaire, J.J., et. el. *References: Introduction to R Markdown*. RStudio. <https://rmarkdown.rstudio.com/docs/>. (Last Accessed: April 4, 1991)
+
+4.  Wu, C.B. & Thompson, M.E. (2020) *Sampling Theory and Practice.* Springer Nature Switzerland AG.
 
 # 9 Appendix
 
