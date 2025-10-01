@@ -60,7 +60,7 @@ The benefit of this type of question is the multiple-choice format, combined wit
 
 ## 3.1 Proposed Sampling Procedure
 
-To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit [4]. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students that are absent or less engaged choose not to participate) and limited internet access in rural or low-income areas.
+To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit \[4\]. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students that are absent or less engaged choose not to participate) and limited internet access in rural or low-income areas.
 
 ## 3.2 Simulation
 
@@ -174,11 +174,6 @@ Figure 1 shows the number of students who selected each resource from the survey
 
 ## 4.4 Data Summary for Confidence Interval Analysis
 
-<<<<<<< HEAD
-=======
-<!-- Some text (and perhaps graphical summaries) of the variables you will calculate the confidence interval from. This should help prep the reader in understanding why the interval is important and whether it is appropriate.-->
-
->>>>>>> 9d14add95b452d5c6bc008507e47c67f36bffc62
 The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides a useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
 
 # 5 Methods
@@ -234,6 +229,147 @@ Generative AI (ChatGPT) was used to help structure this report, generate simulat
 ## 9.1 Survey questions
 
 Below is a well formatted copy of all of my survey questions (along with the opening and closing messages/statements).
+
+**Introduction**
+
+This is the STEMBuddies Handbook Survey!
+
+Mentorship is a resource that aids students in finishing high school and getting ready for higher education, especially in science, technology, engineering, and mathematics (STEM) areas. STEMBuddies is a group that connects high school students with mentors, organizes workshops, offers programs centered on post-secondary education, and supplies free resources to decrease obstacles for underrepresented communities.
+
+We appreciate your participation. STEMBuddies Handbook is a resource designed to support high school students in their academic and personal journeys in STEM and your feedback will provide valuable information to improve it.
+
+This questionnaire will require approximately 5 minutes to finish. Your responses are confidential, anonymous, and will only be used to improve the STEMBuddies Handbook.
+
+**Section 1: Demographics**
+
+1\. You are in Grade
+
+-   9
+
+-   10
+
+-   11
+
+-   12
+
+-   Other: \_\_\_\_\_\_\_\_\_\_
+
+2.  What gender do you identify with? -
+
+-   Female
+
+-   Male
+
+-   Prefer not to say
+
+-   Other: \_\_\_\_\_\_\_\_\_\_
+
+3.  What racial or ethnic group describes you?
+
+-   Indigenous (First Nations, Métis, Inuit)
+-   Black
+-   East Asian
+-   Latino
+-   Middle Eastern
+-   South Asian
+-   South East Asian
+-   White
+-   Other: \_\_\_\_\_\_\_\_\_\_
+
+4\. Select your school type
+
+-   Public
+
+-   Private
+
+-   Other: \_\_\_\_\_\_\_\_\_\_
+
+5.Which of the following best describes your current academic program?
+
+-   Mainstream (OSSD only)
+-   AP
+-   IB
+-   Other: \_\_\_\_\_\_\_\_\_\_
+
+6\. Which is your province or territory of residence?
+
+-   Ontario
+-   Quebec
+-   Nova Scotia
+-   New Brunswick
+-   Manitoba
+-   British Columbia
+-   Prince Edward Island
+-   Saskatchewan
+-   Alberta
+-   Newfoundland and Labrador
+-   Northwest Territories
+-   Yukon
+-   Nunavut
+
+**Section 2: Needs and Feedback**
+
+1.  On a scale from 1 (not helpful) to 5 (extremely helpful), how helpful do you think a handbook resource would be for supporting you in your STEM journey?
+
+-   1 (Not Helpful)
+
+-   2
+
+-   3
+
+-   4
+
+-   5 (Extremely Helpful)
+
+2\. Which areas of the handbook do you think need the most improvement? (Select all that apply)
+
+-   Course planning and prerequisites
+
+-   AP/IB pathway guidance
+
+-   Study strategies
+
+-   Extracurriculars and competitions
+
+-   University admissions (OUAC, supplementary applications)
+
+-   Scholarships and financial aid
+
+-   U.S. application process
+
+-   Other: \_\_\_\_\_\_\_\_\_\_
+
+3\. Which of the following resources would be most valuable to you as part of the STEMBuddies program? (Select up to three options)
+
+-   Academic Tutoring
+-   College Application
+-   Guidance Career Counseling
+-   Financial Literacy
+-   Mental Health Support
+-   Time Management Skills
+-   University/Program Information
+-   Other: \_\_\_\_\_\_\_\_\_\_
+
+4\. What challenges or barriers are preventing you from pursuing STEM? (Select all that apply)
+
+-   Lack of information about post-secondary programs
+-   Limited access to mentors/role models
+-   Financial concerns
+-   Difficulty in certain STEM subjects
+-   Family or community expectations
+-   Other: \_\_\_\_\_\_\_\_\_\_
+
+**Section 3: Open Feedback**
+
+1.  What additional content or features would you like to see included in the STEMBuddies Handbook?
+
+**Closing Message (Sent as a Confirmation Message)**
+
+Thanks so much for giving us feedback!
+
+The STEMBuddies Handbook will incorporate your feedback and ensure it satisfies the needs of students like you. Thanks to your help, we can make STEM pathways accessible to all Canadian high school students.
+
+If you want to learn more about STEMBuddies and all the STEMBuddies resources, please visit: https://stembuddies.ca.
 
 ## 9.2 Simulated Survey Data
 
