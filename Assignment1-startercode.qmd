@@ -178,7 +178,7 @@ Figure 1 shows the number of students who selected each resource from the survey
 
 <!-- Some text (and perhaps graphical summaries) of the variables you will calculate the confidence interval from. This should help prep the reader in understanding why the interval is important and whether it is appropriate.-->
 
-=======
+
 
 
 The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides a useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
