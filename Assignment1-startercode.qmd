@@ -228,7 +228,7 @@ Generative AI (ChatGPT) was used to help structure this report, generate simulat
 
 ## 9.1 Survey questions
 
-Below is a well formatted copy of all of my survey questions (along with the opening and closing messages/statements).
+Below is a well formatted copy of all of our survey questions (along with the opening and closing messages/statements).
 
 **Introduction**
 
@@ -254,7 +254,7 @@ This questionnaire will require approximately 5 minutes to finish. Your response
 
 -   Other: \_\_\_\_\_\_\_\_\_\_
 
-2.  What gender do you identify with? -
+2.  What gender do you identify with?
 
 -   Female
 
