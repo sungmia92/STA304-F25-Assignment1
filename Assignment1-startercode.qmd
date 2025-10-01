@@ -4,6 +4,7 @@ author: "\\small A1-GROUP 40: ISLA CHEONG, VANESSA GABRIELA KWOK, MIA SUNG, CARO
 subtitle: "STA304 - Fall 2025 - Assignment 1"
 format: pdf
 fontsize: 12pt
+geometry: margin=2.5cm
 editor: visual
 ---
 
@@ -59,7 +60,7 @@ The benefit of this type of question is the multiple-choice format, combined wit
 
 ## 3.1 Proposed Sampling Procedure
 
-To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students that are absent or less engaged choose not to participate) and limited internet access in rural or low-income areas.
+To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit [4]. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students that are absent or less engaged choose not to participate) and limited internet access in rural or low-income areas.
 
 ## 3.2 Simulation
 
@@ -173,6 +174,11 @@ Figure 1 shows the number of students who selected each resource from the survey
 
 ## 4.4 Data Summary for Confidence Interval Analysis
 
+<<<<<<< HEAD
+=======
+<!-- Some text (and perhaps graphical summaries) of the variables you will calculate the confidence interval from. This should help prep the reader in understanding why the interval is important and whether it is appropriate.-->
+
+>>>>>>> 9d14add95b452d5c6bc008507e47c67f36bffc62
 The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides a useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
 
 # 5 Methods
