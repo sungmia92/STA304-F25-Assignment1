@@ -108,7 +108,11 @@ sim_data <- tibble(id = 1:n) %>%
 
 ## 4.1 Data Cleaning and Processing
 
-The datasets consists of simulated survey responses from 100 high school students, where each student was asked to identify three preferred resources from a list (e.g., academic tutoring, mental health support, financial literacy). To prepare the data for analysis, we reshaped the responses into a long format so that all selected resources appeared in a single column. We then recorded these selections into a binary structure for each unique resource. The key variables of interest are the binary indicators for resource preference, which capture whether or not each student selected a given resource. This cleaned datasets provides a consistent and reproducible format for analyzing overall trends in resource demand.
+The dataset consists of simulated survey responses from 100 high school students. Each student was asked to select up to three resources they would find most valuable from a list that included options such as Academic Tutoring, College Application Guidance, and Financial Literacy.
+
+To prepare the data for analysis, we reshaped the responses into a long format, where each selected resource for a student appeared as a separate entry. This helps us to summarize selections across all students. Next, we converted the data into a binary format, creating separate indicator variables for each resource. In this structure, a value of 1 indicates that a student selected the resource, and 0 indicates they did not.
+
+The main variables are the binary indicators for each resource, showing whether a student selected it. This cleaned format allows for consistent, reproducible analysis of overall resource preferences.
 
 ```{r, include = FALSE}
 
@@ -176,7 +180,6 @@ Figure 1 shows the number of students who selected each resource from the survey
 # 5 Methods
 
 To estimate the proportion of students who prefer a specific resource, we will use the following formula for a 95% confidence interval for a population proportion: $$CI = \hat{p} \pm z^*  \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$where $\hat{p}$ is the sample proportion, $z^∗$ is the critical value from the standard normal distribution (z-score) corresponding to the desired confidence level (1.96 for 95% confidence), and n is the sample size \[2\]. The value under the square root represents the standard error, reflecting the variability expected from repeated student sampling, and multiplying it by $z^∗$ gives the margin of error. This method assumes a large enough sample size to support the normal approximation and that student responses are independent of each other. With these conditions, a 95% confidence interval indicates that if the survey were repeated many times, about 95% of the constructed intervals would capture the true population proportion.
-
 
 # 6 Results
 
