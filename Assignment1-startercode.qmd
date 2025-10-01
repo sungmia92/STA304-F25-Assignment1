@@ -147,8 +147,6 @@ The main analysis focuses on the survey question: “Which of the following reso
 
 ## 4.3 Figures
 
-Below is a bar plot of frequencies:
-
 ```{r, fig.width=7, fig.height=5, echo = FALSE}
 
 # # Use this to create some plots. 
@@ -174,12 +172,6 @@ sim_data_clean %>%
 Figure 1 shows the number of students who selected each resource from the survey. The x-axis lists all possible resources, while the y-axis represents the number of students selecting each option. This figure clearly highlights which resources are most frequently requested, providing STEMBuddies with a visual summary of student preferences. For example, taller bars indicate higher demand for a particular resource, helping to prioritize support areas in the handbook.
 
 ## 4.4 Data Summary for Confidence Interval Analysis
-
-<<<<<<< HEAD
-<!-- Some text (and perhaps graphical summaries) of the variables you will calculate the confidence interval from. This should help prep the reader in understanding why the interval is important and whether it is appropriate.-->
-
-=======
->>>>>>> 7178fc34e8fcd9b119237deee75ea699db66f99b
 The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides a useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
 
 # 5 Methods
