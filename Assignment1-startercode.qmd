@@ -175,7 +175,8 @@ Figure 1 shows the number of students who selected each resource from the survey
 
 # 5 Methods
 
-To estimate the proportion of students who prefer a specific resource, we will use the following formula for a 95% confidence interval for a population proportion: $$CI = \hat{p} \pm z^*  \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$where $\hat{p}$ is the sample proportion, $z^∗$ is the z-score corresponding to the desired confidence level (1.96 for 95% confidence), and n is the sample size \[2\].
+To estimate the proportion of students who prefer a specific resource, we will use the following formula for a 95% confidence interval for a population proportion: $$CI = \hat{p} \pm z^*  \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$where $\hat{p}$ is the sample proportion, $z^∗$ is the critical value from the standard normal distribution (z-score) corresponding to the desired confidence level (1.96 for 95% confidence), and n is the sample size \[2\]. The value under the square root represents the standard error, reflecting the variability expected from repeated student sampling, and multiplying it by $z^∗$ gives the margin of error. This method assumes a large enough sample size to support the normal approximation and that student responses are independent of each other. With these conditions, a 95% confidence interval indicates that if the survey were repeated many times, about 95% of the constructed intervals would capture the true population proportion.
+
 
 # 6 Results
 
