@@ -36,7 +36,7 @@ Our survey, hosted on <https://forms.gle/sWqTQ1HCXPrjkk6BA>, is designed to gath
 
 ## 2.2 Testing My Survey
 
-Each question was designed to minimize ambiguity and cognitive load. For example, we avoided double-barreled items and ensured that the survey was focused and concise \[1\]. We piloted the survey with three peers and incorporated feedback to refine clarity and ease of responsiveness.
+Each question was designed to minimize ambiguity and cognitive load. For example, we avoided double-barreled items and ensured that the survey was focused and concise \[2\]. We piloted the survey with three peers in different grade levels and incorporated feedback to refine clarity and ease of responsiveness. Based on the feedback, we improved on word selection and question setting.
 
 ## 2.3 Showcasing Relevant Question(s)
 
