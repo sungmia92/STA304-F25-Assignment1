@@ -212,7 +212,7 @@ Interpretation: For example, 12% of students selected "Academic Tutoring" as a v
 
 # 7 Generative AI Statement
 
-Generative AI (ChatGPT) was used to help structure this report, generate simulation code, and ensure clarity of statistical explanations. All simulated data generation, results, and interpretation were conducted independently by the authors.
+Generative AI (ChatGPT) was used to help structure this report, generate simulation code, and ensure clarity of statistical explanations. AI was also used selectively to enhance grammar, improve clarity of expression, and suggest alternative phrasing for technical material. All simulated data generation, results, and interpretation were conducted independently by the authors. Although AI can enhance clarity and efficiency, it has notable limitations: its outputs may include factual or methodological errors, and it lacks the critical reasoning required for proper statistical validation. To address this concern, all AI-generated outputs were thoroughly reviewed, verified against course materials and reliable sources, and rewritten or adapted to reflect the authors’ own understanding. 
 
 # 8 Bibliography
 
