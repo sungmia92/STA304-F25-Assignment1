@@ -60,7 +60,7 @@ The benefit of this type of question is the multiple-choice format, combined wit
 
 ## 3.1 Proposed Sampling Procedure
 
-To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit \[4\]. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students that are absent or less engaged choose not to participate) and limited internet access in rural or low-income areas.
+To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit \[4\]. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students that are absent or less engaged choose not to participate) and limited internet access in rural or low-income areas \[1\].
 
 ## 3.2 Simulation
 
@@ -216,11 +216,11 @@ Generative AI (ChatGPT) was used to help structure this report, generate simulat
 
 # 8 Bibliography
 
-1.  *Creating Effective Surveys: Best Practices in Survey Design.* Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
+1.  Stantcheva, S. (2022) *How To Run Surveys: A guide to create your own identifying variation and revealing the invisible.* <https://scholar.harvard.edu/files/stantcheva/files/How_to_run_surveys_Stantcheva.pdf>
 
-2.  Dekking, F.M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
+2. *Creating Effective Surveys: Best Practices in Survey Design.* Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
 
-3.  Allaire, J.J., et. el. *References: Introduction to R Markdown*. RStudio. <https://rmarkdown.rstudio.com/docs/>. (Last Accessed: April 4, 1991)
+3.  Dekking, F.M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
 
 4.  Wu, C.B. & Thompson, M.E. (2020) *Sampling Theory and Practice.* Springer Nature Switzerland AG.
 
