@@ -186,18 +186,12 @@ To estimate the proportion of students who prefer a specific resource, we will u
 
 ```{r, include = FALSE}
 
-# Here you can derive the CIs of interest based off the simulated data in a previous chunk.
-
-# Below is some example code that calculates the CI for the proportion of students that think they are friendly. You will need to change this to be relevant to your survey question/variable of interest.
-
 n <- nrow(sim_data_clean)
 p_hat <- sim_data_clean %>% filter(resource == "Academic Tutoring") %>% nrow() / n
 z_star <- 1.96
 margin_of_error <- z_star * sqrt((p_hat * (1 - p_hat)) / n)
 ci_lower <- p_hat - margin_of_error
 ci_upper <- p_hat + margin_of_error
-
-# Here is an example of printing out the results. You will need to change this to be relevant to your survey question/variable of interest.
 
 cat("Proportion of students preferring Academic Tutoring:", round(p_hat, 2), "\n")
 cat("95% Confidence Interval: (", round(ci_lower, 2), ",", round(ci_upper, 2), ")\n")
