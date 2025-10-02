@@ -54,7 +54,7 @@ A key survey question is showcased below:
 
 We choose this question because it provides insight into what our target population may be seeking in the handbook and helps us better understand their needs.
 
-The benefit of this type of question is the multiple-choice format, combined with an ‘Other’ option, provides both structure and flexibility. It allows participants to choose from common resources while also giving them space to share needs that may not be listed. However, a drawback is that some nuanced or specific needs might still be overlooked, either because participants do not think to write them in or because they feel limited by the predefined options.
+The benefit of this type of question is that the multiple-choice format, combined with an ‘Other’ option, provides both structure and flexibility. It allows participants to choose from common resources while also giving them space to share needs that may not be listed. However, a drawback is that some nuanced or specific needs might still be overlooked, either because participants do not think to write them in or because they feel limited by the predefined options. This drawback is unavoidable while we want to keep the answering process easy and short, but the following question ("What challenges or barriers are preventing you from pursuing STEM?") may help us understand the students' needs better.
 
 # 3 Procedure
 
