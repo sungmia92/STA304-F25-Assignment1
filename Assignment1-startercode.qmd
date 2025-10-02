@@ -377,6 +377,3 @@ Below is a `glimpse()` or `head()` of my simulated data (this should be the data
 head(sim_data)
 ```
 
-## 9.3 Supplementary Materials
-
-Any other supplementary items you wish to include (e.g., more plots, derivations, etc.) can be in this sub section.
