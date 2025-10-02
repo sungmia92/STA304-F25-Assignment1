@@ -222,7 +222,9 @@ Generative AI (ChatGPT) was used to help structure this report, generate simulat
 
 3.  Dekking, F.M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
 
-4.  Wu, C.B. & Thompson, M.E. (2020) *Sampling Theory and Practice.* Springer Nature Switzerland AG.
+4.  Hoxby, C., & Turner, S. (2014). Expanding College Opportunities for High-Achieving, Low Income Students. <https://eml.berkeley.edu/~saez/course131/Hoxby-Turner13.pdf>.
+
+5.  Wu, C.B. & Thompson, M.E. (2020) *Sampling Theory and Practice.* Springer Nature Switzerland AG.
 
 # 9 Appendix
 
