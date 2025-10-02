@@ -20,9 +20,9 @@ library(tidyverse)
 
 # 1 Introduction
 
-Mentorship is a resource that aids students in finishing high school and getting ready for higher education, especially in Science, Technology, Engineering, and Mathematics (STEM) areas. STEMBuddies is a group that connects high school students with mentors, organizes workshops, offers programs centered on post-secondary education, and supplies free resources to decrease obstacles for underrepresented communities. To develop an optimized handbook that supports students both academically and personally, it is essential to collect feedback from the high school students so that their needs and preferences can be assessed.
+Planning for high school and preparing for college applications can be extremely complex for students who lack experience and support, particularly for those from low-income and underrepresented groups. However, providing these students with adequate information and guidance can encourage them to apply to and gain admission to colleges with richer educational resources and higher academic standards \[4\]. The High School Handbook developed by STEMBuddies has the potential to provide such guidance. To more effectively support students in their academic planning, financial needs, and personal development, it is necessary to collect feedback from current students on the handbook to assess their needs and preferences.
 
-This report outlines the design and analysis of a survey created to assess the needs of high school students and their preferences. By using best practices in survey design \[1\], the survey provides actionable insights for STEMBuddies to improve mentorship accessibility, inclusivity, and their overall impact.
+This report outlines the design and analysis of a survey created to assess the needs of high school students and their preferences. By using best practices in survey design \[2\], the survey provides actionable insights for STEMBuddies to improve the handbook accessibility, inclusivity, and their overall impact.
 
 # 2 Survey Showcasing
 
