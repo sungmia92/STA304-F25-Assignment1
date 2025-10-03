@@ -20,15 +20,15 @@ library(tidyverse)
 
 # 1 Introduction
 
-Planning for high school and preparing for college applications can be extremely complex for students who lack experience and support, particularly for those from low-income and underrepresented groups. However, providing these students with adequate information and guidance can encourage them to apply to and gain admission to colleges with richer educational resources and higher academic standards \[4\]. The High School Handbook developed by STEMBuddies has the potential to provide such guidance. To more effectively support students in their academic planning, financial needs, and personal development, it is necessary to collect feedback from current students on the handbook to assess their needs and preferences.
+Planning for high school and preparing for college applications can be extremely complex for students who lack experience and support, particularly for those from low-income and underrepresented groups. However, providing these students with adequate information and guidance can encourage them to apply to and gain admission to colleges with richer educational resources and higher academic standards \[3\]. The High School Handbook developed by STEMBuddies has the potential to provide such guidance. To more effectively support students in their academic planning, financial needs, and personal development, it is necessary to collect feedback from current students on the handbook to assess their needs and preferences.
 
-This report outlines the design and analysis of a survey created to assess the needs of high school students and their preferences. By using best practices in survey design \[2\], the survey provides actionable insights for STEMBuddies to improve the handbook accessibility, inclusivity, and their overall impact.
+This report outlines the design and analysis of a survey created to assess the needs of high school students and their preferences. By using best practices in survey design \[1\], the survey provides actionable insights for STEMBuddies to improve the handbook accessibility, inclusivity, and their overall impact.
 
 # 2 Survey Showcasing
 
 ## 2.1 Survey Description
 
-Our survey, hosted on <https://forms.gle/sWqTQ1HCXPrjkk6BA>, is designed to gather insights from high school students regarding their academic and personal needs, as well as their preferences for mentorship programs. The survey consists of the following sections:
+Our survey, hosted on <https://forms.gle/sWqTQ1HCXPrjkk6BA>, is designed to gather insights from high school students. This survey focuses on evaluating how the handbook helps for academic planning, personal growth and looking for specific resources or supports, and what the students expect for a useful handbook. The survey consists of the following sections:
 
 1.  **Introduction**: A brief description of STEMBuddies and purpose of the survey.
 2.  **Core Questions**: Demographic questions, needs-assessment questions, and program feedback prompts.
@@ -36,7 +36,7 @@ Our survey, hosted on <https://forms.gle/sWqTQ1HCXPrjkk6BA>, is designed to gath
 
 ## 2.2 Testing My Survey
 
-Each question was designed to minimize ambiguity and cognitive load. For example, we avoided double-barreled items and ensured that the survey was focused and concise \[2\]. We piloted the survey with three peers in different grade levels and incorporated feedback to refine clarity and ease of responsiveness. Based on the feedback, we improved on word selection and question setting.
+Each question was designed to minimize ambiguity and cognitive load. For example, we avoided double-barreled items and ensured that the survey was focused and concise \[1\]. We piloted the survey with three peers in different grade levels and incorporated feedback to refine clarity and ease of responsiveness. Based on the feedback, we improved on word selection and question setting.
 
 ## 2.3 Showcasing Relevant Question(s)
 
@@ -52,7 +52,7 @@ A key survey question is showcased below:
 -   Financial Literacy
 -   Other: \_\_\_\_\_\_\_\_\_\_\_
 
-We choose this question because it provides insight into what our target population may be seeking in the handbook and helps us better understand their needs.
+We chose this question because it provides insight into what our target population may be seeking in the handbook and helps us better understand their needs.
 
 The benefit of this type of question is that the multiple-choice format, combined with an ‘Other’ option, provides both structure and flexibility. It allows participants to choose from common resources while also giving them space to share needs that may not be listed. However, a drawback is that some nuanced or specific needs might still be overlooked, either because participants do not think to write them in or because they feel limited by the predefined options. This drawback is unavoidable while we want to keep the answering process easy and short, but the following question ("What challenges or barriers are preventing you from pursuing STEM?") may help us understand the students' needs better.
 
@@ -62,7 +62,7 @@ The benefit of this type of question is that the multiple-choice format, combine
 
 To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit \[5\]. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.
 
-This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students who are absent or less engaged choose not to participate), and limited internet access in rural or low-income areas \[1\]. Potential biases include self-selection bias, since the students who volunteer to answer the questionnaire might be more interested or motivated in high school planning, which means they possibly have more information on covered topics and underestimate/overestimate the helpfulness of specific topics.
+This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students who are absent or less engaged choose not to participate), and limited internet access in rural or low-income areas \[4\]. Potential biases include self-selection bias, since the students who volunteer to answer the questionnaire might be more interested or motivated in high school planning, which means they possibly have more information on covered topics and underestimate/overestimate the helpfulness of specific topics.
 
 ## 3.2 Simulation
 
@@ -70,38 +70,18 @@ We simulate survey responses for 100 students to mirror the showcased resource-p
 
 ```{r, include = FALSE}
 
-# Here you can simulate and clean the data. 
-
-# You may need additional chunks, in case you want to include some of the cleaning output. 
-
-# I have included some example code below, but it should be changed, as it is likely not relevant and doesn't really appropriately simulate heights.
-
-# set.seed(1234)
-# height <- runif(n=5, min=0, max=4)
-# friendly <- sample(x=c("yeah", "No"), size=5, replace=T)
-# 
-# sim_data <- tibble(height, friendly)
-
 set.seed(1234)
 n <- 100
 resources <- c("Academic Tutoring", "College Application Guidance", "Career Counseling",
                "Mental Health Support", "Time Management Skills", "Financial Literacy", "Other")
 
-# sim_data <- tibble(
-#  id = 1:n,
-#  resource1 = sample(resources, n, replace = FALSE),
-#  resource2 = sample(resources, n - 1, replace = FALSE),
-#  resource3 = sample(resources, n, replace = FALSE)
-#)
-
 # Ensure unique selections for each student
 sim_data <- tibble(id = 1:n) %>%
   rowwise() %>%  # Process each row individually
   mutate(
-    resource1 = sample(resources, 1),  # First resource
-    remaining_resources = list(resources[resources != resource1]),  # Remove the first choice
-    resource2 = sample(remaining_resources, 1),  # Second resource (unique)
-    resource3 = sample(remaining_resources[remaining_resources != resource2], 1)  # Third resource (unique)
+    resource1 = sample(resources, 1, replace = FALSE, prob = c(0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.1)),  # First resource. We expect "Other" option is less likely to be selected.
+    resource2 = sample(resources, 1, replace = FALSE, prob = c(0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.1)),  # Second resource (unique)
+    resource3 = sample(resources, 1, replace = FALSE, prob = c(0.15, 0.15, 0.15, 0.15, 0.15, 0.15, 0.1))  # Third resource (unique)
   ) %>%
   select(id, resource1, resource2, resource3)  # Keep only the needed columns
 
@@ -119,16 +99,6 @@ The main variables are the binary indicators for each resource, showing whether 
 
 ```{r, include = FALSE}
 
-# # Here you can clean your data (if needed). 
-# 
-# # Below is an example of me changing the "yeah"s to "Yes"s
-# 
-# sim_data_clean <- sim_data %>% 
-#   mutate(friendly_clean  = case_when(friendly=="yeah" ~ "Yes",
-#                                      friendly=="No"~"No")) %>% 
-#   select(-friendly)
-
-# Reshape to long format
 sim_data_clean <- sim_data %>%
   pivot_longer(cols = starts_with("resource"), names_to = "resource_num", values_to = "resource") %>%
   select(-resource_num)
@@ -152,15 +122,6 @@ The main analysis focuses on the survey question: “Which of the following reso
 
 ```{r, fig.width=7, fig.height=5, echo = FALSE}
 
-# # Use this to create some plots. 
-# 
-# sim_data_clean %>% ggplot(aes(x=friendly_clean))+
-#   geom_bar(fill="orange", col="brown") +
-#   theme_minimal() + 
-#   labs(x = "Friendly",
-#        y = "Frequency",
-#        title = "Figure 1: A bar plot displaying whether the student thinks that \n they are a friendly person or not for all students \n in highschools measured in Ontario.") 
-
 sim_data_clean %>%
   ggplot(aes(x = resource)) +
   geom_bar(fill = "blue", col = "black") +
@@ -172,15 +133,15 @@ sim_data_clean %>%
 
 ```
 
-Figure 1 shows the number of students who selected each resource from the survey. The x-axis lists all possible resources, while the y-axis represents the number of students selecting each option. Among the listed resources, Financial Literacy had the highest frequency of selection, while Time Management Skills had the lowest. This figure clearly highlights which resources are most frequently requested, providing STEMBuddies with a visual summary of student preferences. For example, taller bars indicate higher demand for a particular resource, helping to prioritize support areas in the handbook.
+Figure 1 shows the number of students who selected each resource from the survey. The x-axis lists all possible resources, while the y-axis represents the number of students selecting each option. Among the listed resources, *Time Management Skills* had the highest frequency of selection, while *Others* had the lowest. This figure clearly highlights which resources are most frequently requested, providing STEMBuddies with a visual summary of student preferences. For example, taller bars indicate higher demand for a particular resource, helping to prioritize support areas in the handbook.
 
 ## 4.4 Data Summary for Confidence Interval Analysis
 
-The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides a useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
+The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
 
 # 5 Methods
 
-To estimate the proportion of students who prefer a specific resource, we will use the following formula for a 95% confidence interval for a population proportion: $$CI = \hat{p} \pm z^*  \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$where $\hat{p}$ is the sample proportion, $z^∗$ is the critical value from the standard normal distribution (z-score) corresponding to the desired confidence level (1.96 for 95% confidence), and n is the sample size \[3\]. The value under the square root represents the standard error, reflecting the variability expected from repeated student sampling, and multiplying it by $z^∗$ gives the margin of error. This method assumes a large enough sample size to support the normal approximation and that student responses are independent of each other. With these conditions, a 95% confidence interval indicates that if the survey were repeated many times, about 95% of the constructed intervals would capture the true population proportion.
+To estimate the proportion of students who prefer a specific resource, we will use the following formula for a 95% confidence interval for a population proportion: $$CI = \hat{p} \pm z^*  \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$where $\hat{p}$ is the sample proportion, $z^∗$ is the critical value from the standard normal distribution (z-score) corresponding to the desired confidence level (1.96 for 95% confidence), and n is the sample size \[2\]. The value under the square root represents the standard error, reflecting the variability expected from repeated student sampling, and multiplying it by $z^∗$ gives the margin of error. This method assumes a large enough sample size to support the normal approximation and that student responses are independent of each other. With these conditions, a 95% confidence interval indicates that if the survey were repeated many times, about 95% of the constructed intervals would capture the true population proportion.
 
 # 6 Results
 
@@ -200,7 +161,7 @@ cat("95% Confidence Interval: (", round(ci_lower, 2), ",", round(ci_upper, 2), "
 
 | Resource          | Proportion of Students | 95% Confidence Interval |
 |-------------------|------------------------|-------------------------|
-| Academic Tutoring | 0.12                   | (0.08, 0.16)            |
+| Academic Tutoring | 0.15                   | (0.11, 0.19)            |
 
 : The proportion and 95% confidence interval of students preferring "Academic Tutoring".
 
@@ -212,13 +173,13 @@ Generative AI (ChatGPT) was used to help structure this report, generate simulat
 
 # 8 Bibliography
 
-1.  Stantcheva, S. (2022) *How To Run Surveys: A guide to create your own identifying variation and revealing the invisible.* <https://scholar.harvard.edu/files/stantcheva/files/How_to_run_surveys_Stantcheva.pdf>
+1.  *Creating Effective Surveys: Best Practices in Survey Design.* Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
 
-2. *Creating Effective Surveys: Best Practices in Survey Design.* Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
+2.  Dekking, F.M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
 
-3.  Dekking, F.M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
+3.  Hoxby, C., & Turner, S. (2014). Expanding College Opportunities for High-Achieving, Low Income Students. <https://eml.berkeley.edu/~saez/course131/Hoxby-Turner13.pdf>.
 
-4.  Hoxby, C., & Turner, S. (2014). Expanding College Opportunities for High-Achieving, Low Income Students. <https://eml.berkeley.edu/~saez/course131/Hoxby-Turner13.pdf>.
+4.  Stantcheva, S. (2022) *How To Run Surveys: A guide to create your own identifying variation and revealing the invisible.*<https://scholar.harvard.edu/files/stantcheva/files/How_to_run_surveys_Stantcheva.pdf>
 
 5.  Wu, C.B. & Thompson, M.E. (2020) *Sampling Theory and Practice.* Springer Nature Switzerland AG.
 
@@ -226,7 +187,7 @@ Generative AI (ChatGPT) was used to help structure this report, generate simulat
 
 ## 9.1 Survey questions
 
-Below is a well formatted copy of all of our survey questions (along with the opening and closing messages/statements).
+Below is a well-formatted copy of all of our survey questions (along with the opening and closing messages/statements).
 
 **Introduction**
 
@@ -252,7 +213,7 @@ This questionnaire will require approximately 5 minutes to finish. Your response
 
 -   Other: \_\_\_\_\_\_\_\_\_\_
 
-2\.  What gender do you identify with?
+2\. What gender do you identify with?
 
 -   Female
 
@@ -262,7 +223,7 @@ This questionnaire will require approximately 5 minutes to finish. Your response
 
 -   Other: \_\_\_\_\_\_\_\_\_\_
 
-3\.  What racial or ethnic group describes you?
+3\. What racial or ethnic group describes you?
 
 -   Indigenous (First Nations, Métis, Inuit)
 -   Black
@@ -307,7 +268,7 @@ This questionnaire will require approximately 5 minutes to finish. Your response
 
 **Section 2: Needs and Feedback**
 
-1\.  On a scale from 1 (not helpful) to 5 (extremely helpful), how helpful do you think a handbook resource would be for supporting you in your STEM journey?
+1\. On a scale from 1 (not helpful) to 5 (extremely helpful), how helpful do you think a handbook resource would be for supporting you in your STEM journey?
 
 -   1 (Not Helpful)
 
@@ -359,7 +320,7 @@ This questionnaire will require approximately 5 minutes to finish. Your response
 
 **Section 3: Open Feedback**
 
-1\.  What additional content or features would you like to see included in the STEMBuddies Handbook?
+1\. What additional content or features would you like to see included in the STEMBuddies Handbook?
 
 **Closing Message (Sent as a Confirmation Message)**
 
