@@ -165,7 +165,7 @@ cat("95% Confidence Interval: (", round(ci_lower, 2), ",", round(ci_upper, 2), "
 
 : The proportion and 95% confidence interval of students preferring "Academic Tutoring".
 
-Interpretation: For example, 12% of students selected "Academic Tutoring" as a valuable resource, and the confidence interval suggests that the true proportion is likely between 8% and 16%.
+Interpretation: For example, 15% of students in our sample selected "Academic Tutoring" as a valuable resource, and the confidence interval suggests that the true proportion is likely between 11% and 19%.
 
 # 7 Generative AI Statement
 
