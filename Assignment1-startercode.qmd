@@ -20,9 +20,9 @@ library(tidyverse)
 
 # 1 Introduction
 
-Planning for high school and preparing for college applications can be extremely complex for students who lack experience and support, particularly for those from low-income and underrepresented groups. However, providing these students with adequate information and guidance can encourage them to apply to and gain admission to colleges with richer educational resources and higher academic standards \[4\]. The High School Handbook developed by STEMBuddies has the potential to provide such guidance. To more effectively support students in their academic planning, financial needs, and personal development, it is necessary to collect feedback from current students on the handbook to assess their needs and preferences.
+Planning for high school and preparing for college applications can be extremely complex for students who lack experience and support, particularly for those from low-income and underrepresented groups. However, providing these students with adequate information and guidance can encourage them to apply to and gain admission to colleges with richer educational resources and higher academic standards \[3\]. The High School Handbook developed by STEMBuddies has the potential to provide such guidance. To more effectively support students in their academic planning, financial needs, and personal development, it is necessary to collect feedback from current students on the handbook to assess their needs and preferences.
 
-This report outlines the design and analysis of a survey created to assess the needs of high school students and their preferences. By using best practices in survey design \[2\], the survey provides actionable insights for STEMBuddies to improve the handbook accessibility, inclusivity, and their overall impact.
+This report outlines the design and analysis of a survey created to assess the needs of high school students and their preferences. By using best practices in survey design \[1\], the survey provides actionable insights for STEMBuddies to improve the handbook accessibility, inclusivity, and their overall impact.
 
 # 2 Survey Showcasing
 
@@ -36,7 +36,7 @@ Our survey, hosted on <https://forms.gle/sWqTQ1HCXPrjkk6BA>, is designed to gath
 
 ## 2.2 Testing My Survey
 
-Each question was designed to minimize ambiguity and cognitive load. For example, we avoided double-barreled items and ensured that the survey was focused and concise \[2\]. We piloted the survey with three peers in different grade levels and incorporated feedback to refine clarity and ease of responsiveness. Based on the feedback, we improved on word selection and question setting.
+Each question was designed to minimize ambiguity and cognitive load. For example, we avoided double-barreled items and ensured that the survey was focused and concise \[1\]. We piloted the survey with three peers in different grade levels and incorporated feedback to refine clarity and ease of responsiveness. Based on the feedback, we improved on word selection and question setting.
 
 ## 2.3 Showcasing Relevant Question(s)
 
@@ -52,7 +52,7 @@ A key survey question is showcased below:
 -   Financial Literacy
 -   Other: \_\_\_\_\_\_\_\_\_\_\_
 
-We choose this question because it provides insight into what our target population may be seeking in the handbook and helps us better understand their needs.
+We chose this question because it provides insight into what our target population may be seeking in the handbook and helps us better understand their needs.
 
 The benefit of this type of question is that the multiple-choice format, combined with an ‘Other’ option, provides both structure and flexibility. It allows participants to choose from common resources while also giving them space to share needs that may not be listed. However, a drawback is that some nuanced or specific needs might still be overlooked, either because participants do not think to write them in or because they feel limited by the predefined options. This drawback is unavoidable while we want to keep the answering process easy and short, but the following question ("What challenges or barriers are preventing you from pursuing STEM?") may help us understand the students' needs better.
 
@@ -60,9 +60,7 @@ The benefit of this type of question is that the multiple-choice format, combine
 
 ## 3.1 Proposed Sampling Procedure
 
-To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit \[5\]. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations.
-
-This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students who are absent or less engaged choose not to participate), and limited internet access in rural or low-income areas \[1\]. Potential biases include self-selection bias, since the students who volunteer to answer the questionnaire might be more interested or motivated in high school planning, which means they possibly have more information on covered topics and underestimate/overestimate the helpfulness of specific topics.
+To collect survey feedback, we propose a stratified random sampling procedure targeting high school students across Canada, with the individual student serving as the sampling unit \[3\]. The survey will be distributed to students via partnerships with high schools, provincial boards, mailing lists, STEM clubs, outreach initiatives, and educational organizations that cater to diverse student populations in order to acquire the sampling frame. This method guarantees representation across various strata such as geographic area, school category (public or private), and socioeconomic level. The survey can be conducted in-class with teacher oversight to boost response rates or online using unique survey links shared through schools and partner organizations. The sampling frame is limited but feasible. Errors may arise from coverage bias (because some schools or students may not be included in the frame), non-response bias (students who are absent or less engaged choose not to participate), and limited internet access in rural or low-income areas \[4\].
 
 ## 3.2 Simulation
 
@@ -137,11 +135,11 @@ Figure 1 shows the number of students who selected each resource from the survey
 
 ## 4.4 Data Summary for Confidence Interval Analysis
 
-The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides a useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
+The cleaned survey data allows us to calculate the proportion of students who selected each resource. With the variables coded as 0 or 1, these proportions give a clear view of student demand. This summary also provides useful information for constructing confidence intervals, which highlight the uncertainty in our estimates and how they may generalize to the broader student population.
 
 # 5 Methods
 
-To estimate the proportion of students who prefer a specific resource, we will use the following formula for a 95% confidence interval for a population proportion: $$CI = \hat{p} \pm z^*  \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$where $\hat{p}$ is the sample proportion, $z^∗$ is the critical value from the standard normal distribution (z-score) corresponding to the desired confidence level (1.96 for 95% confidence), and n is the sample size \[3\]. The value under the square root represents the standard error, reflecting the variability expected from repeated student sampling, and multiplying it by $z^∗$ gives the margin of error. This method assumes a large enough sample size to support the normal approximation and that student responses are independent of each other. With these conditions, a 95% confidence interval indicates that if the survey were repeated many times, about 95% of the constructed intervals would capture the true population proportion.
+To estimate the proportion of students who prefer a specific resource, we will use the following formula for a 95% confidence interval for a population proportion: $$CI = \hat{p} \pm z^*  \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$where $\hat{p}$ is the sample proportion, $z^∗$ is the critical value from the standard normal distribution (z-score) corresponding to the desired confidence level (1.96 for 95% confidence), and n is the sample size \[2\]. The value under the square root represents the standard error, reflecting the variability expected from repeated student sampling, and multiplying it by $z^∗$ gives the margin of error. This method assumes a large enough sample size to support the normal approximation and that student responses are independent of each other. With these conditions, a 95% confidence interval indicates that if the survey were repeated many times, about 95% of the constructed intervals would capture the true population proportion.
 
 # 6 Results
 
@@ -169,17 +167,17 @@ Interpretation: For example, 12% of students selected "Academic Tutoring" as a v
 
 # 7 Generative AI Statement
 
-Generative AI (ChatGPT) was used to help structure this report, generate simulation code, and ensure clarity of statistical explanations. All simulated data generation, results, and interpretation were conducted independently by the authors.
+Generative AI (ChatGPT) was used to help structure this report, generate simulation code, and ensure clarity of statistical explanations. AI was also used selectively to enhance grammar, improve clarity of expression, and suggest alternative phrasing for technical material. All simulated data generation, results, and interpretation were conducted independently by the authors. Although AI can enhance clarity and efficiency, it has notable limitations: its outputs may include factual or methodological errors, and it lacks the critical reasoning required for proper statistical validation. To address this concern, all AI-generated outputs were thoroughly reviewed, verified against course materials and reliable sources, and rewritten or adapted to reflect the authors’ own understanding. 
 
 # 8 Bibliography
 
-1.  Allaire, J.J., et. el. *References: Introduction to R Markdown*. RStudio. <https://rmarkdown.rstudio.com/docs/>. (Last Accessed: April 4, 1991)
+1.  *Creating Effective Surveys: Best Practices in Survey Design.* Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
 
-2.  *Creating Effective Surveys: Best Practices in Survey Design.* Evidence Use in Education. (2021). Regional Educational Laboratory West. <https://eric.ed.gov/?id=ED619797>.
+2.  Dekking, F.M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
 
-3.  Dekking, F.M., et al. (2005) *A Modern Introduction to Probability and Statistics: Understanding why and how.* Springer Science & Business Media.
+3.  Hoxby, C., & Turner, S. (2014). Expanding College Opportunities for High-Achieving, Low Income Students. <https://eml.berkeley.edu/~saez/course131/Hoxby-Turner13.pdf>.
 
-4.  Hoxby, C., & Turner, S. (2014). Expanding College Opportunities for High-Achieving, Low Income Students. <https://eml.berkeley.edu/~saez/course131/Hoxby-Turner13.pdf>.
+4.  Stantcheva, S. (2022) *How To Run Surveys: A guide to create your own identifying variation and revealing the invisible.*<https://scholar.harvard.edu/files/stantcheva/files/How_to_run_surveys_Stantcheva.pdf>
 
 5.  Wu, C.B. & Thompson, M.E. (2020) *Sampling Theory and Practice.* Springer Nature Switzerland AG.
 
@@ -187,7 +185,7 @@ Generative AI (ChatGPT) was used to help structure this report, generate simulat
 
 ## 9.1 Survey questions
 
-Below is a well formatted copy of all of our survey questions (along with the opening and closing messages/statements).
+Below is a well-formatted copy of all of our survey questions (along with the opening and closing messages/statements).
 
 **Introduction**
 
@@ -243,7 +241,7 @@ This questionnaire will require approximately 5 minutes to finish. Your response
 
 -   Other: \_\_\_\_\_\_\_\_\_\_
 
-5.Which of the following best describes your current academic program?
+5\. Which of the following best describes your current academic program?
 
 -   Mainstream (OSSD only)
 -   AP
